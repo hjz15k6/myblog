@@ -4,3 +4,5 @@
 from django.http import HttpResponse
 def index(request):
     return HttpResponse(u"hello world")
+def list(request):
+	return render(request, 'list.htm')
